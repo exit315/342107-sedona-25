@@ -11,26 +11,31 @@
                     <img src="img/logo.svg" alt="City of Sedona">
                 </a>
 
-                <ul>
+                <ul class="site-navigation">
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
                     <li><a href="#">Карта штата</a></li>
-                    <li><a href="#">Гостиницы</a></li>
+                    <li><a>Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
+            <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
             <!-- Фильтр -->
             <!-- Сортировка -->
             <section class="hotels-results">
+                <h2 class="visually-hidden">Результаты поиска</h2>
+
                 <div class="hotels-card"> <!-- Блок Отель 1 -->
-                	<img src="img/amara-resort-spa.svg" alt="Amara Resort & Spa">
+                    <a class="hotels-card-photo" href="#">
+                        <img src="img/amara-resort-spa.svg" alt="Amara Resort & Spa">
+                    </a>
                     <div class="hotels-info">
-                        <h3 class="hotels-name">Amara Resort & Spa</h3>
+                        <h3 class="hotels-name"><a href="#">Amara Resort & Spa</a></h3>
                         <div class="hotels-type-price">
-                            <span>Гостиница</span>
-                            <span>От 4000 р.</span>
+                            <span class="hotels-type">Гостиница</span>
+                            <span class="hotels-price">От 4000 р.</span>
                         </div>
                         <div class="hotels-book">
                             <a class="button-details" href="#">Подробнее</a>
@@ -38,18 +43,20 @@
                         </div>
                     </div>
                     <div class="hotels-rank">
-                        <span class="hotels-stars">4 звезды</span>
-                        <span class="hotels-rating">Рейтинг: 8.5</span>
+                        <p class="hotels-stars">4 звезды</p>
+                        <p class="hotels-rating">Рейтинг: 8.5</p>
                     </div>
                 </div> <!-- Конец блока Отель 1 -->
 
                 <div class="hotels-card"> <!-- Блок Отель 2 -->
-                    <img src="img/desert-quail-inn.svg" alt="Desert Quail Inn">
+                    <a class="hotels-card-photo" href="#">
+                        <img src="img/desert-quail-inn.svg" alt="Desert Quail Inn">
+                    </a>
                     <div class="hotels-info">
-                        <h3 class="hotels-name">Desert Quail Inn</h3>
+                        <h3 class="hotels-name"><a href="#">Desert Quail Inn</a></h3>
                         <div class="hotels-type-price">
-                            <span>Мотель</span>
-                            <span>От 3000 р.</span>
+                            <span class="hotels-type">Мотель</span>
+                            <span class="hotels-price">От 3000 р.</span>
                         </div>
                         <div class="hotels-book">
                             <a class="button-details" href="#">Подробнее</a>
@@ -57,18 +64,20 @@
                         </div>
                     </div>
                     <div class="hotels-rank">
-                        <span class="hotels-stars">3 звезды</span>
-                        <span class="hotels-rating">Рейтинг: 8.9</span>
+                        <p class="hotels-stars">3 звезды</p>
+                        <p class="hotels-rating">Рейтинг: 8.9</p>
                     </div>
                 </div> <!-- Конец блока Отель 2 -->
 
                 <div class="hotels-card"> <!-- Блок Отель 3 -->
-                    <img src="img/villas-at-poco-diablo.svg" alt="Villas at Poco Diablo">
+                    <a class="hotels-card-photo" href="#">
+                        <img src="img/villas-at-poco-diablo.svg" alt="Villas at Poco Diablo">
+                    </a>
                     <div class="hotels-info">
-                        <h3 class="hotels-name">Villas at Poco Diablo</h3>
+                        <h3 class="hotels-name"><a href="#">Villas at Poco Diablo</a></h3>
                         <div class="hotels-type-price">
-                            <span>Апартаменты</span>
-                            <span>От 2000 р.</span>
+                            <span class="hotels-type">Апартаменты</span>
+                            <span class="hotels-price">От 2000 р.</span>
                         </div>
                         <div class="hotels-book">
                             <a class="button-details" href="#">Подробнее</a>
@@ -76,8 +85,8 @@
                         </div>
                     </div>
                     <div class="hotels-rank">
-                        <span class="hotels-stars">2 звезды</span>
-                        <span class="hotels-rating">Рейтинг: 9.2</span>
+                        <p class="hotels-stars">2 звезды</p>
+                        <p class="hotels-rating">Рейтинг: 9.2</p>
                     </div>
                 </div> <!-- Конец блока Отель 3 -->
             </section>
@@ -89,7 +98,7 @@
             </div>
 
             <div class="footer-social">
-                <ul>
+                <ul class="footer-social-list">
                 <li><a class="social-button" href="#">Твиттер</a></li>
                 <li><a class="social-button" href="#">Фейсбук</a></li>
                 <li><a class="social-button" href="#">Ютьюб</a></li>
