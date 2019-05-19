@@ -137,7 +137,9 @@
                     <label for="date-in">Дата заезда:</label>
                     <p class="date-in-select">
                         <input id="date-in" type="text" name="arrival-date" value="24 апреля 2017">
-                        <button class="calendar-select" type="button" name="calendar" aria-label="Открыть календарь для выбора даты заезда"></button>
+                        <button class="calendar-select" type="button" name="calendar">
+                            <span class="visually-hidden">Открыть календарь для выбора даты заезда</span>
+                        </button>
                     </p>
                 </div>
 
@@ -145,26 +147,36 @@
                     <label for="date-out">Дата выезда:</label> 
                     <p class="date-out-select">
                         <input id="date-out" type="text" name="departure-date" value="4 июля 2017">
-                        <button class="calendar-select" type="button" name="calendar" aria-label="Открыть календарь для выбора даты выезда"></button>
+                        <button class="calendar-select" type="button" name="calendar">
+                            <span class="visually-hidden">Открыть календарь для выбора даты выезда</span>
+                        </button>
                     </p>
                 </div>
 
                 <div class="visiters-select">
                     <p class="visiters-select-adults">
                         <span class="visiters-adults">Взрослые:</span>
-                        <button class="visiters-select-less" type="button" name="adult-less" aria-label="Уменьшить количество взрослых посетителей"></button>
+                        <button class="visiters-select-less" type="button" name="adult-less">
+                            <span class="visually-hidden">Уменьшить количество взрослых посетителей</span>
+                        </button>
                         <span class="visiters-adults-number">2</span>
-                        <button class="visiters-select-more" type="button" name="adult-more" aria-label="Увеличить количество взрослых посетителей"></button>
+                        <button class="visiters-select-more" type="button" name="adult-more">
+                            <span class="visually-hidden">Увеличить количество взрослых посетителей</span>
+                        </button>
                     </p>
 
                     <p class="visiters-select">
                         <span class="visiters-select-kids">Дети:</span>
-                        <button class="visiters-select-less" type="button" name="kid-less" aria-label="Уменьшить количество детей-посетителей"></button>
+                        <button class="visiters-select-less" type="button" name="kid-less" aria-label="Уменьшить количество детей-посетителей">
+                            <span class="visually-hidden">Уменьшить количество детей-посетителей</span>
+                        </button>
                         <span class="visiters-kids-number">0</span>
-                        <button class="visiters-select-more" type="button" name="kid-more" aria-label="Увеличить количество детей-посетителей"></button>
+                        <button class="visiters-select-more" type="button" name="kid-more">
+                            <span class="visually-hidden">Увеличить количество детей-посетителей</span>
+                        </button>
                     </p>
                 </div>
-                <button type="submit" aria-label="Найти гостиницу по выбранным параметрам">Найти</button>
+                <button type="submit" name="search-results">Найти</button>
             </form>
         </section>
     </body>
