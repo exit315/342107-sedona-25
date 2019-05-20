@@ -105,6 +105,53 @@
                 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <!-- Кнопка для вызова формы поиска гостиницы -->
                 <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
+
+                <form class="modal-search" method="post">
+                    <div class="date-select">
+                        <label class="date-appointment" for="date-in">Дата заезда:</label>
+                        <p class="date-field">
+                            <input id="date-in" type="text" name="arrival-date" value="24 апреля 2017">
+                            <button class="calendar-select" type="button">
+                                <span class="visually-hidden">Открыть календарь для выбора даты заезда</span>
+                            </button>
+                        </p>
+                    </div>
+
+                    <div class="date-select">
+                        <label class="date-appointment" for="date-out">Дата выезда:</label> 
+                        <p class="date-field">
+                            <input id="date-out" type="text" name="departure-date" value="4 июля 2017">
+                            <button class="calendar-select" type="button">
+                                <span class="visually-hidden">Открыть календарь для выбора даты выезда</span>
+                            </button>
+                        </p>
+                    </div>
+
+                    <div class="visiters">
+                        <p class="visiters-select">
+                            <span class="visiters-adults">Взрослые:</span>
+                            <button class="visiters-number-less" type="button">
+                                <span class="visually-hidden">Уменьшить количество взрослых посетителей</span>
+                            </button>
+                            <input class="adults-number" type="number" name="adults-number" value="2">
+                            <button class="visiters-number-more" type="button">
+                                <span class="visually-hidden">Увеличить количество взрослых посетителей</span>
+                            </button>
+                        </p>
+                        <p class="visiters-select">
+                            <span class="visiters-kids">Дети:</span>
+                            <button class="visiters-number-less" type="button">
+                                <span class="visually-hidden">Уменьшить количество детей-посетителей</span>
+                            </button>
+                            <input class="kids-number" type="number" name="kids-number" value="0">
+                            <button class="visiters-number-more" type="button">
+                                <span class="visually-hidden">Увеличить количество детей-посетителей</span>
+                            </button>
+                        </p>
+                    </div>
+
+                    <button type="submit">Найти</button>
+                </form>
             </section>
 
             <div class="main-map">
@@ -119,65 +166,16 @@
 
             <div class="footer-social">
                 <ul class="footer-social-list">
-                    <li><a class="social-button" href="#">Твиттер</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Ютьюб</a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">Перейти на страницу Седоны в социальной сети Твиттер</span></a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">Перейти на страницу Седоны в социальной сети Фейсбук</span></a></li>
+                    <li><a class="social-button" href="#"><span class="visually-hidden">Перейти на канал Седоны на сайте Ютьюб</span></a></li>
                 </ul>
             </div>
 
             <div class="footer-copyright">
                 <span>Website by</span>
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo/logo-html-academy.svg" width="115" height="41" alt="HTML Academy">HTML Academy</a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo/logo-html-academy.svg" width="115" height="41" alt="HTML Academy"><span class="visually-hidden">Перейти на сайт разработчика "HTML Academy"</span></a>
             </div> 
         </footer>
-        <section class="modal">
-            <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
-            <form class="modal-search" method="post">
-                <div class="date-select">
-                    <label for="date-in">Дата заезда:</label>
-                    <p class="date-in-select">
-                        <input id="date-in" type="text" name="arrival-date" value="24 апреля 2017">
-                        <button class="calendar-select" type="button" name="calendar">
-                            <span class="visually-hidden">Открыть календарь для выбора даты заезда</span>
-                        </button>
-                    </p>
-                </div>
-
-                <div class="date-select">
-                    <label for="date-out">Дата выезда:</label> 
-                    <p class="date-out-select">
-                        <input id="date-out" type="text" name="departure-date" value="4 июля 2017">
-                        <button class="calendar-select" type="button" name="calendar">
-                            <span class="visually-hidden">Открыть календарь для выбора даты выезда</span>
-                        </button>
-                    </p>
-                </div>
-
-                <div class="visiters-select">
-                    <p class="visiters-select-adults">
-                        <span class="visiters-adults">Взрослые:</span>
-                        <button class="visiters-select-less" type="button" name="adult-less">
-                            <span class="visually-hidden">Уменьшить количество взрослых посетителей</span>
-                        </button>
-                        <span class="visiters-adults-number">2</span>
-                        <button class="visiters-select-more" type="button" name="adult-more">
-                            <span class="visually-hidden">Увеличить количество взрослых посетителей</span>
-                        </button>
-                    </p>
-
-                    <p class="visiters-select">
-                        <span class="visiters-select-kids">Дети:</span>
-                        <button class="visiters-select-less" type="button" name="kid-less" aria-label="Уменьшить количество детей-посетителей">
-                            <span class="visually-hidden">Уменьшить количество детей-посетителей</span>
-                        </button>
-                        <span class="visiters-kids-number">0</span>
-                        <button class="visiters-select-more" type="button" name="kid-more">
-                            <span class="visually-hidden">Увеличить количество детей-посетителей</span>
-                        </button>
-                    </p>
-                </div>
-                <button type="submit" name="search-results">Найти</button>
-            </form>
-        </section>
     </body>
 </html>
