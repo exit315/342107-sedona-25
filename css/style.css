@@ -10,13 +10,14 @@ body {
     color: #000000;
     line-height: 26px;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 0, 0.5);
-    background-image: 
-    url("../img/bg/bg-polygon.svg");
 
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 1201px 59px;
+    background-image: 
+    url("../img/bg/bg-welcome.png"), 
+    url("../img/bg/bg-polygon.svg"),
+    url("../img/bg/bg-mountains.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 410px 132px, 39px 506px, 40px -27px;
+    background-size: 459px 353px, 1201px 59px, 1200px 800px;
 }
 
 a {
@@ -192,8 +193,9 @@ a {
 
 body.catalog-page {
     background-image: url("../img/bg/bg-catalog.jpg");
+    background-size: 1200px 800px;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: 40px -238px;
 }
 
 .hotels-name a {
