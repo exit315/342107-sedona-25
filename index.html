@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -21,10 +24,10 @@
         </header>
 
         <main class="container">
-            <h1 class="visually-hidden">Туристический город Седона в Аризоне</h1>
-            <div class="background-logo">
-                <p>Welcome to the gorgeous Sedona</p>
-                <p>"Because the Grand Canyon sucks!"</p>
+            <div class="header-lead-in">
+                <h1 class="visually-hidden">Туристический город Седона в Аризоне</h1>
+                <p class="visually-hidden">Welcome to the gorgeous Sedona</p>
+                <p class="visually-hidden">"Because the Grand Canyon sucks!"</p>
             </div>
      
             <section class="advantages">
@@ -104,7 +107,7 @@
                 <p class="search-description">Укажите предполагаемые даты поездки, <br>
                 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <!-- Кнопка для вызова формы поиска гостиницы -->
-                <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
+                <button class="search-call-button" type="button">Поиск гостиницы в Седоне</button>
 
                 <form class="modal-search" method="post">
                     <div class="date-select">
@@ -150,7 +153,7 @@
                         </p>
                     </div>
 
-                    <button type="submit">Найти</button>
+                    <button class="search-button" type="submit">Найти</button>
                 </form>
             </section>
 
