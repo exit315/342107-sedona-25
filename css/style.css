@@ -1,0 +1,268 @@
+/** Общие стили **/
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 26px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 0, 0.5);
+    background-image: 
+    url("../img/bg/bg-polygon.svg");
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1201px 59px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/** Стили для хедера и навигации **/
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.site-navigation,
+.advantages-list,
+.features-item,
+.footer-social-list {
+    list-style: none;
+}
+
+.site-navigation a {
+    font-weight: bold;
+    color: #000000;
+}
+
+.site-navigation a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation a:focus {
+    color: #b2b2b2;
+}
+
+.current-page {
+    color: #766357;
+}
+
+/** Стили для главной **/
+
+.background-logo {
+    text-align: center;
+    background-image: url;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.advantages-slogan {
+    font-weight: bold;
+    text-align: center;
+}
+
+.advantages-lead-in {
+    font-size: 14px;
+    text-align: center;
+}
+
+.advantages-item-name,
+.features-item-name {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.advantages-item-number,
+.advantages-item-decription,
+.features-item-description,
+.search-description {
+    font-size: 14px;
+    text-align: center;
+}
+
+.search-lead-in {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search-call-button {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: inherit;
+    background-color: #766357;
+    border: 1px solid #766357;
+    outline: none;
+}
+
+.search-call-button:hover {
+    background-color: #604e43;
+    border: 1px solid #604e43;
+}
+
+.search-call-button:focus {
+    color: #857871;
+    background-color: #503e33;
+    border: 1px solid #503e33;
+}
+
+.modal-search {
+    display: none;
+}
+
+/** Стили для модального окна поиска 
+
+.modal-search {
+    font-family: inherit;
+    text-transform: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.date-select input[type="text"],
+.visiters-select input[type="number"] {
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+    outline: none;
+    border: 1px solid #f2f2f2;
+}
+
+.date-select input[type="text"]:hover {
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+}
+
+.date-select input[type="text"]:focus {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+} 
+
+
+
+.modal-search .search-button {
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: inherit;
+    line-height: 26px;
+    background-color: #81b3d2;
+}
+
+.modal-search .search-button:hover {
+    background-color: #669ec0;
+}
+
+.modal-search .search-button:focus {
+    color: #88b6d1;
+    background-color: #5496bd;
+}
+
+**/
+
+/** Стили для страницы каталога **/
+
+body.catalog-page {
+    background-image: url("../img/bg/bg-catalog.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.hotels-name a {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #000000;
+}
+
+.hotels-name a:hover {
+    color: #81b3d2;
+}
+
+.hotels-name a:focus {
+    color: #b2b2b2;
+}
+
+.hotels-type-price {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotels-book a {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.button-details {
+    background-color: #81b3d2;
+}
+
+.button-details:hover {
+    background-color: #669ec0;
+}
+
+.button-details:focus {
+    color: #88b6d1;
+    background-color: #5496bd;
+}
+
+.button-book {
+    background-color: #766357;
+}
+
+.button-book:hover {
+    background-color: #604e43;
+}
+
+.button-book:focus {
+    color: #857871;
+    background-color: #503e33;
+}
+
+.hotels-rating {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    background-color: #f2f2f2;
+}
+
+/** Стили для футера **/
+
+.footer-tag {
+    font-weight: bold;
+}
+
+.footer-copyright span {
+    font-size: 14px;
+}
