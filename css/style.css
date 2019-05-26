@@ -10,14 +10,6 @@ body {
     color: #000000;
     line-height: 26px;
     text-transform: uppercase;
-
-    background-image: 
-    url("../img/bg/bg-welcome.png"), 
-    url("../img/bg/bg-polygon.svg"),
-    url("../img/bg/bg-mountains.jpg");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 410px 132px, 39px 506px, 40px -27px;
-    background-size: 459px 353px, 1201px 59px, 1200px 800px;
 }
 
 a {
@@ -54,48 +46,52 @@ a {
     color: #000000;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
     color: #81b3d2;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
     color: #b2b2b2;
 }
 
 .current-page {
+    font-weight: bold;
     color: #766357;
 }
 
 /** Стили для главной **/
-
 .background-logo {
-    text-align: center;
-    background-image: url;
-    background-repeat: no-repeat;
-    background-position: top center;
+    height: 559px;
+    background-image: 
+    url("../img/bg/bg-welcome.png"), 
+    url("../img/bg/bg-polygon.svg"),
+    url("../img/bg/bg-mountains.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    background-size: 459px 353px, 1201px 59px, 1200px 800px;
 }
 
 .advantages-slogan {
     font-weight: bold;
-    text-align: center;
 }
 
 .advantages-lead-in {
     font-size: 14px;
+}
+
+.advantages {
+	font-size: 14px;
+	line-height: 21px;
     text-align: center;
 }
 
 .advantages-item-name,
 .features-item-name {
     font-size: 21px;
-    line-height: 21px;
     font-weight: bold;
-    text-align: center;
 }
 
-.advantages-item-number,
-.advantages-item-decription,
-.features-item-description,
 .search-description {
     font-size: 14px;
     text-align: center;
@@ -108,25 +104,25 @@ a {
 }
 
 .search-call-button {
-    font-family: "PT Sans", Arial, sans-serif;
+    width: 568px;
+    height: 86px;
     font-size: 21px;
     font-weight: bold;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 100%);
     text-transform: inherit;
     background-color: #766357;
-    border: 1px solid #766357;
+    border: none;
     outline: none;
 }
 
-.search-call-button:hover {
+.search-call-button:hover,
+.search-call-button:focus {
     background-color: #604e43;
-    border: 1px solid #604e43;
 }
 
-.search-call-button:focus {
-    color: #857871;
+.search-call-button:active {
+    color: rgba(255, 255, 255, 70%);
     background-color: #503e33;
-    border: 1px solid #503e33;
 }
 
 .modal-search {
@@ -153,20 +149,16 @@ a {
     border-collapse: collapse;
     background-color: #f2f2f2;
     outline: none;
-    border: 1px solid #f2f2f2;
+    border: none;
 }
 
 .date-select input[type="text"]:hover {
     background-color: #ebebeb;
-    border: 1px solid #ebebeb;
 }
 
 .date-select input[type="text"]:focus {
     background-color: #ffffff;
-    border: 1px solid #e5e5e5;
-} 
-
-
+}
 
 .modal-search .search-button {
     font-family: inherit;
@@ -191,25 +183,32 @@ a {
 
 /** Стили для страницы каталога **/
 
-body.catalog-page {
+/** Фон для фильтра 
+{
     background-image: url("../img/bg/bg-catalog.jpg");
     background-size: 1200px 800px;
     background-repeat: no-repeat;
     background-position: 40px -238px;
 }
+**/
 
-.hotels-name a {
+.hotels-name {
     font-size: 21px;
     font-weight: bold;
-    line-height: 21px;
-    color: #000000;
+    line-height: 26px;
 }
 
-.hotels-name a:hover {
+.hotels-name a {
+    display: block;
+    color: inherit;
+}
+
+.hotels-name a:hover,
+.hotels-name a:focus {
     color: #81b3d2;
 }
 
-.hotels-name a:focus {
+.hotels-name a:active {
     color: #b2b2b2;
 }
 
@@ -223,19 +222,20 @@ body.catalog-page {
     font-size: 14px;
     font-weight: bold;
     line-height: 21px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 100%);
 }
 
 .button-details {
     background-color: #81b3d2;
 }
 
-.button-details:hover {
+.button-details:hover,
+.button-details:focus {
     background-color: #669ec0;
 }
 
-.button-details:focus {
-    color: #88b6d1;
+.button-details:active {
+    color: rgba(255, 255, 255, 70%);
     background-color: #5496bd;
 }
 
@@ -243,12 +243,13 @@ body.catalog-page {
     background-color: #766357;
 }
 
-.button-book:hover {
+.button-book:hover,
+.button-book:focus {
     background-color: #604e43;
 }
 
-.button-book:focus {
-    color: #857871;
+.button-book:active {
+    color: rgba(255, 255, 255, 70%);
     background-color: #503e33;
 }
 
