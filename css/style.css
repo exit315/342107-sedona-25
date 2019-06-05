@@ -3,47 +3,124 @@
 body {
     margin: 0;
     padding: 0;
-    
+    width: 100%;
+
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 21px;
     font-weight: normal;
     color: #000000;
     line-height: 26px;
     text-transform: uppercase;
+
+    background-color: #f2f2f2;
 }
 
 a {
     text-decoration: none;
 }
 
-.visually-hidden {
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
-/** Стили для хедера и навигации **/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/** --------------------- СТИЛИ ДЛЯ НАВИГАЦИИ И ЛОГО ---------------------- **/
 
 .main-navigation {
+    width: 1200px;
+
     font-size: 14px;
     line-height: 26px;
 }
 
-.site-navigation,
-.advantages-list,
-.features-item,
-.footer-social-list {
+.main-header-logo {
+    position: absolute;
+    width: 244px;
+    height: 56px;
+    
+    padding: 0;
+    margin: 0 478px;
+
+    text-align: center;
+}
+
+.site-navigation {
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
     list-style: none;
 }
 
+.site-navigation li {
+    box-sizing: border-box;
+    width: 239px;
+    height: 56px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+    padding-left: 42px; 
+    text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+    padding-right: 42px;
+    text-align: right;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-left: auto;
+}
+
+.site-navigation li:nth-child(1) a,
+.site-navigation li:nth-child(2) a {
+    margin-right: 30px;
+}
+
+.site-navigation li:nth-child(3) a,
+.site-navigation li:nth-child(4) a {
+    margin-left: 30px;
+}
+
 .site-navigation a {
+    display: block;
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+
     font-weight: bold;
     color: #000000;
+
+    border: none;
+    outline: none;
 }
 
 .site-navigation a:hover,
@@ -60,52 +137,266 @@ a {
     color: #766357;
 }
 
-/** Стили для главной **/
+/** --------------------- СТИЛИ ДЛЯ ГЛАВНОЙ ---------------------- **/
+
 .background-logo {
-    height: 559px;
+    width: 1200px;
+    min-height: 508px;
+    margin: 0 auto;
+    padding: 0;
+    
     background-image: 
-    url("../img/bg/bg-welcome.png"), 
+    url("../img/bg/bg-welcome.svg"), 
     url("../img/bg/bg-polygon.svg"),
     url("../img/bg/bg-mountains.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 371px 76px, 0 452px, 0 -56px;
+    background-size: 459px 353px, 1201px 59px, 1200px 773px;
+}
 
-    background-size: 459px 353px, 1201px 59px, 1200px 800px;
+main.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.advantages {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.advantages-lead-in-wrapper {
+    width: inherit;
+    padding: 0;   
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 216px;
+    justify-content: space-between;
+    line-height: 26px;
 }
 
 .advantages-slogan {
+    margin-left: 380px;
+    margin-right: 380px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    font-size: 21px;
     font-weight: bold;
 }
 
 .advantages-lead-in {
+    margin-left: 356px;
+    margin-right: 356px;
+    margin-top: 0;
+    margin-bottom: 50px;
     font-size: 14px;
 }
 
-.advantages {
-	font-size: 14px;
-	line-height: 21px;
-    text-align: center;
+.advantages-list,
+.features-item,
+.footer-social-list {
+    list-style: none;
+}
+
+.advantages-list {
+    width: inherit;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages-item {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.advantages-list > li:first-of-type,
+.advantages-list > li:last-of-type {
+    margin: 0;
+    padding: 0;
+
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.advantages-item-unit {
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 54px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .advantages-item-name,
 .features-item-name {
     font-size: 21px;
     font-weight: bold;
+} 
+
+.advantages-item-unit p {
+    margin: 0;
+    padding: 0;
 }
 
-.search-description {
-    font-size: 14px;
-    text-align: center;
+.advantages-item-unit h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px; 
+    margin-left: 100px;
+    margin-right: 100px;
+}
+    
+.advantages-item-unit .advantages-item-number {
+    margin-bottom: 25px;
 }
 
-.search-lead-in {
-    font-size: 26px;
+.advantages-item-unit .advantages-item-decription {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.advantages-item-photo.bridge {
+    order: -1;
+}
+
+.advantages-item-photo img {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.advantages-item-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #eeeeee;
+}
+
+.features-list {
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.features-item {
+    width: 304px;
+    margin-top: 160px;
+    margin-bottom: 83px;
+}
+
+.features-item-name {
+	position: relative;
+
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.features-list li:nth-child(1) .features-item-name::before {
+    content: "";
+
+    position: absolute;
+    top: -100px;
+    left: 115px;
+    width: 75px;
+    height: 72px;
+
+    background-image: url("../img/icons/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.features-list li:nth-child(2) .features-item-name::before {
+    content: "";
+
+    position: absolute;
+    top: -100px;
+    left: 115px;
+    width: 75px;
+    height: 72px;
+
+    width: 74px;
+    height: 70px;
+
+    background-image: url("../img/icons/icon-food.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.features-list li:nth-child(3) .features-item-name::before {
+    content: "";
+
+    position: absolute;
+    top: -105px;
+    left: 120px;
+    width: 75px;
+    height: 72px;
+
+    width: 64px;
+    height: 76px;
+
+    background-image: url("../img/icons/icon-souvenir.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.features-item-description {
+    margin: 0;
+    padding: 0;
+}
+
+.search p {
+    margin: 0;
+    padding: 0;
+}
+
+.search .search-lead-in {
+    margin-top: 55px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
 }
 
+.search .search-description {
+	margin-bottom: 45px;
+
+    font-size: 14px;
+    text-align: center;
+}
+
 .search-call-button {
+	display: block;
     width: 568px;
     height: 86px;
+
+    margin: 0 auto;
+    padding: 0;
+
     font-size: 21px;
     font-weight: bold;
     color: rgba(255, 255, 255, 100%);
@@ -261,11 +552,66 @@ a {
 }
 
 /** Стили для футера **/
+.main-footer {
+    display: flex;
+    justify-content: space-between;
 
-.footer-tag {
+    background-color: rgba(254, 254, 254, 0.9);
+}
+
+.footer-tag a {
+    display: block;
+
+    padding: 0;
+    margin-left: 130px;
+    margin-top: 47px;
+    margin-bottom: 47px;
+
     font-weight: bold;
+    color: inherit;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 150px;
+
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.social-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 46px;
+    height: 48px;
+
+    background-color: #81b3d2;
+}
+
+.footer-copyright {
+    display: flex;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    padding: 0;
 }
 
 .footer-copyright span {
+    padding: 5px 10px 10px 5px;
+    
     font-size: 14px;
 }
+
+.footer-copyright a,
+.footer-copyright img {
+	display: block;
+
+    margin: 0;
+    padding: 0;
+}
+
