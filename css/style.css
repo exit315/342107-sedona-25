@@ -47,11 +47,18 @@ img {
     overflow: hidden;
 }
 
-.container {
+.background-wrapper {
     width: 1200px;
     margin: 0 auto;
     padding: 0;
     background-color: #ffffff;
+    box-shadow: 0 0 14px 2px #dbdbdb;
+}
+
+.catalog-container {
+    width: 1056px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 /** --------------------- СТИЛИ ДЛЯ НАВИГАЦИИ И ЛОГО ---------------------- **/
@@ -139,7 +146,6 @@ li.current-page {
     padding-top: 14px;
     padding-bottom: 16px;
     padding-left: 0;
-    padding-right: 42px;
 
     font-weight: bold;
     color: #766357;
@@ -160,7 +166,6 @@ li.current-page {
     background-position: 371px 76px, 0 452px, 0 -56px;
     background-size: 459px 353px, 1201px 59px, 1200px 773px;
 }
-
 
 .advantages {
     font-size: 14px;
@@ -380,17 +385,44 @@ li.current-page {
 }
 
 .modal-search {
-    display: none;
-}
+    width: 568px;
+    margin: 0 auto;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-/** Стили для модального окна поиска 
-
-.modal-search {
     font-family: inherit;
     text-transform: inherit;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
+    
+    background-color: #ffffff;
+}
+.modal-search p {
+    margin: 0;
+    padding: 0;
+}
+
+.date-select {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 29px;
+    padding: 0;
+}
+
+.visiters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 29px;
+    padding: 0;
 }
 
 .date-select input[type="text"],
@@ -406,6 +438,14 @@ li.current-page {
     border: none;
 }
 
+.date-select input[type="text"] {
+    width: 346px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 230px;
+}
+
 .date-select input[type="text"]:hover {
     background-color: #ebebeb;
 }
@@ -414,7 +454,16 @@ li.current-page {
     background-color: #ffffff;
 }
 
+.adults-number,
+.kids-number {
+    width: 38px;
+    padding: 6px 14px;
+}
+
 .modal-search .search-button {
+    margin: 0;
+    padding: 16px 196px;
+
     font-family: inherit;
     font-size: 21px;
     font-weight: bold;
@@ -422,6 +471,9 @@ li.current-page {
     text-transform: inherit;
     line-height: 26px;
     background-color: #81b3d2;
+
+    border: none;
+    outline: none;
 }
 
 .modal-search .search-button:hover {
@@ -446,15 +498,47 @@ li.current-page {
 }
 **/
 
-.catalog-container {
-    width: 1056px;
-    margin: 0 auto;
-    padding: 0;
+
+
+
+.filter-conditions-title,
+.filter-type-title,
+.filter-range-title {
+    font-weight: bold;
+}
+
+.filter-conditions,
+.filter-type {
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+}
+
+.hotels-filter {
+    display: flex;
+    padding-top: 28px;
+    padding-bottom: 31px;
+    padding-left: 72px;
+    padding-right: 72px;
+    font-size: 16px;
+    line-height: 21px;
+
+    background-color: #2a3e45;
+}
+
+.filter-range {
+    
+}
+
+.filter-button {
+    font-size: inherit;
+    text-transform: uppercase;
 }
 
 .hotels-results {
     display: flex;
     flex-direction: column;
+
 }
 
 .hotels-card {
@@ -603,9 +687,9 @@ p.hotels-rating {
     margin: 0;
     margin-top: 64px;
     padding: 0;
-    padding-top: 5px;
+    padding-top: 4px;
     padding-right: 13px;
-    padding-bottom: 6px;
+    padding-bottom: 3px;
     padding-left: 16px;
 
     font-size: 14px;
