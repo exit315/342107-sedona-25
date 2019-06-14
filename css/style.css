@@ -539,16 +539,16 @@ input.kids-number {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 input[type="number"]:hover,
 input[type="number"]:focus {
-  -moz-appearance: number-input;
+    -moz-appearance: number-input;
 }
 
 button.visiters-number-less, 
@@ -564,6 +564,8 @@ button.visiters-number-more {
     background-color: #f2f2f2;
     border: none;
     outline: none;
+
+    cursor: pointer;
 }
 
 button.visiters-number-less {
@@ -581,8 +583,6 @@ button.visiters-number-less::before {
     height: 3px;
 
     background-color: #a9a9a9;
-
-    cursor: pointer;
 }
 
 button.visiters-number-less:hover::before,
@@ -605,8 +605,6 @@ button.visiters-number-more::before {
     height: 3px;
 
     background-color: #a9a9a9;
-
-    cursor: pointer;
 }
 
 button.visiters-number-more::after {
@@ -626,8 +624,6 @@ button.visiters-number-more::after {
         -ms-transform: rotate(90deg);
 
             transform: rotate(90deg);
-
-    cursor: pointer;
 }
 
 button.visiters-number-more:hover::before,
@@ -813,7 +809,7 @@ button.visiters-number-more:active::after {
     width: 4px;
     height: 4px;
 
-    background: #ababab;
+    background-color: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
@@ -860,6 +856,8 @@ button.visiters-number-more:active::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
 
     padding-top: 30px;
     padding-bottom: 30px;
@@ -871,13 +869,14 @@ button.visiters-number-more:active::after {
 
 p.resuts-number {
     margin: 0;
-
+    
     font-weight: bold;
 }
 
 .sorting-title {
     margin: 0;
-
+    margin-left: 47px;
+    
     font-size: 12px;
     line-height: 18px;
 }
@@ -888,12 +887,17 @@ p.resuts-number {
     display: flex;
 
     margin: 0;
+    margin-left: 40px;
     padding: 0;
 
     font-size: 12px;
     line-height: 18px;
 
     list-style: none;
+}
+
+.sorting-type-list li:not(:first-child) {
+    margin-left: 32px;
 }
 
 .sorting-btn-wrap {
