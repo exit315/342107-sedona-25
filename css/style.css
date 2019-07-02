@@ -392,15 +392,12 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding: 30px 31px;
 
-    font-size: 21px;
     font-weight: bold;
-    line-height: 26px;
     text-transform: inherit;
+    text-align: center;
     color: #ffffff;
 
     background-color: #766357;
-    border: none;
-    outline: none;
 }
 
 .search-call-button:hover,

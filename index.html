@@ -5,7 +5,7 @@
         <title>HTML Academy: Седона</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <div class="background-wrapper">
@@ -114,9 +114,9 @@
                     <p class="search-lead-in">Заинтересовались?</p>
                     <p class="search-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-                    <button class="search-call-button" type="button">Поиск гостиницы в Седоне</button>
+                    <a class="search-call-button" href="searh-form.html">Поиск гостиницы в Седоне</a>
                     
-                    <form class="modal-search" method="post">
+                    <form class="modal-search" action="hotels-search.php" method="get">
                         <div class="date-select in">
                             <label class="date-appointment" for="date-in">Дата заезда:</label>
                             <p class="date-field">
@@ -139,22 +139,22 @@
 
                         <div class="visiters">
                             <p class="visiters-select">
-                                <span class="visiters-adults">Взрослые:</span>
+                                <label class="visiters-adults" for="adults">Взрослые:</label>
                                 <button class="visiters-number-less" type="button">
                                     <span class="visually-hidden">Уменьшить количество взрослых посетителей</span>
                                 </button>
-                                <input class="adults-number" type="number" name="adults-number" value="2">
+                                <input id="adults" class="adults-number" type="number" name="adults-number" value="2">
                                 <button class="visiters-number-more" type="button">
                                     <span class="visually-hidden">Увеличить количество взрослых посетителей</span>
                                 </button>
                             </p>
 
                             <p class="visiters-select">
-                                <span class="visiters-kids">Дети:</span>
+                                <label class="visiters-kids" for="kids">Дети:</label>
                                 <button class="visiters-number-less" type="button">
                                     <span class="visually-hidden">Уменьшить количество детей-посетителей</span>
                                 </button>
-                                <input class="kids-number" type="number" name="kids-number" value="0">
+                                <input id="kids" class="kids-number" type="number" name="kids-number" value="0">
                                 <button class="visiters-number-more" type="button">
                                     <span class="visually-hidden">Увеличить количество детей-посетителей</span>
                                 </button>
