@@ -812,7 +812,7 @@ input[type="radio"].visually-hidden {
     background-size: 1200px 562px;
     background-position: 0 -57px;
     background-repeat: no-repeat;
-  }
+}
 
 .filter-wrapper {
     display: -webkit-box;
@@ -1216,7 +1216,7 @@ a.sorting-btn-down:active path {
 }
 
 .hotels-info {
-	width: 700px;
+    width: 700px;
     padding-left: 30px;
 }
 
@@ -1384,15 +1384,16 @@ a.sorting-btn-down:active path {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 35px;
-    padding-bottom: 37px;
-
-    background-color: rgba(254, 254, 254, 90%);
+    padding-bottom: 37px; 
 }
 
 .container {
     position: absolute;
-    z-index: 10;
     bottom: 0;
+    z-index: 10;
+
+    background-color: #fefefe;
+    background-color: rgba(254, 254, 254, 90%);
 }
 
 .footer-tag {
