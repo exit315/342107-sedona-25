@@ -1,5 +1,7 @@
 # Личный проект «Седона»
 
+https://exit315.github.io/342107-sedona-25/
+
 * Студент: [Анастасия Карнаухова](https://up.htmlacademy.ru/htmlcss/25/user/342107).
 * Наставник: [Максим Фарига](https://up.htmlacademy.ru/htmlcss/25/user/6090).
 
